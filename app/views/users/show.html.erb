@@ -1,2 +1,16 @@
 <h1><%= @user.email %></h1>
-<%= @user.inspect %>
+
+<h2>IFTTT Applet configuration</h2>
+
+<p><strong>IF:</strong> DO Button (Press a button)</p>
+<p><strong>THEN:</strong> Maker (Make a web request)</p>
+
+<p>
+  <strong>Web request parameters:</strong>
+  <ul>
+    <li>URL: <%= open_url %></li>
+    <li>Method: POST</li>
+    <li>Content Type: application/json</li>
+    <li>Body: <pre>{"user_email":"<%= @user.email %>","user_token":"<%= @user.authentication_token %>","openedWith":"Do Button"}</pre></li>
+  </ul>
+</p>

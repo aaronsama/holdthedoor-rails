@@ -3,7 +3,7 @@ Rails.application.routes.draw do
   resources :accesses
 
   get 'profile' => 'users#profile'
-  # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
+  post 'open' => 'gate#open', defaults: { format: :json }
 
   root to: 'users#profile'
 end
