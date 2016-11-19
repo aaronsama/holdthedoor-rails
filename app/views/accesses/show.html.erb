@@ -1,0 +1,14 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Openedwith:</strong>
+  <%= @access.openedWith %>
+</p>
+
+<p>
+  <strong>User:</strong>
+  <%= @access.user %>
+</p>
+
+<%= link_to 'Edit', edit_access_path(@access) %> |
+<%= link_to 'Back', accesses_path %>
