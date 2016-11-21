@@ -32,6 +32,9 @@ gem 'bson_ext'
 gem 'devise'
 gem 'simple_token_authentication', '~> 1.0'
 
+# simple async jobs
+gem 'sucker_punch', '~> 2.0'
+
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug', platform: :mri

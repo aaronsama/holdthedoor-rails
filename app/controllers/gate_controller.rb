@@ -6,7 +6,8 @@ class GateController < ApplicationController
 
   def open
     # render json: { ok: true }
-    Access.create(user: current_user, openedWith: params[:opened_with])
+    # Access.create(user: current_user, openedWith: params[:opened_with])
+    GateOpenerJob.perform_async(user: current_user, openedWith: params[:opened_with])
   end
 
 end
