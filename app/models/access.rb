@@ -3,5 +3,6 @@ class Access
   include Mongoid::Timestamps::Created
 
   field :openedWith, type: String
-  field :user, type: String
+
+  belongs_to :user
 end

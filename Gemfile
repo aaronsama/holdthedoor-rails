@@ -32,6 +32,9 @@ gem 'bson_ext'
 gem 'devise'
 gem 'simple_token_authentication', '~> 1.0'
 
+gem 'telegram-bot'
+gem 'telegram-bot-types'
+
 # simple async jobs
 gem 'sucker_punch', '~> 2.0'
 
